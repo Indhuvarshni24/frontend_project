@@ -11,7 +11,7 @@ const CreateUser = () => {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend-project-6-4kwt.onrender.com/api/users", { name, email, address })
+      .post("https://backend-project-6-4kwt.onrender.com", { name, email, address })
       .then((result) => {
         console.log(result.data);
         navigate("/");
