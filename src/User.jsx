@@ -77,7 +77,7 @@ const User = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/user/fetch")
+      .get("https://backend-project-6-4kwt.onrender.com")
       .then((res) => {
         console.log(res.data);
         setUsers(res.data.data); // Assuming the API returns data in res.data.data
@@ -90,7 +90,7 @@ const User = () => {
   const deleteUser = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios
-        .delete(`http://localhost:3000/api/user/delete/${id}`)
+        .delete(`https://backend-project-6-4kwt.onrender.com`)
         .then(() => {
           alert("User deleted successfully");
           setUsers(users.filter((user) => user._id !== id)); // Update the UI after deletion
