@@ -11,7 +11,7 @@ const Createuser = () => {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/api/user/create", { name, email, address })
+      .post("https://backend-project-6-4kwt.onrender.com", { name, email, address })
       .then((result) => {
         console.log(result.data);
         navigate("/");
@@ -52,4 +52,4 @@ const Createuser = () => {
   );
 };
 
-export default CreateUser;
+export default Createuser;
