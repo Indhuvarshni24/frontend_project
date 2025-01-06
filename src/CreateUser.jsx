@@ -52,4 +52,4 @@ const Createuser = () => {
   );
 };
 
-export default Createuser;
+export default CreateUser;
