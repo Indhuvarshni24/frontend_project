@@ -1,6 +1,67 @@
-h1{
-  color: red;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url('/bg.jpg'); /* Path to image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+
 }
-body{
-  background-color:pink;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+}
+
+.header {
+  background-color: rgba(76, 175, 80, 0.9); /* Slight transparency */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: rgba(34, 34, 34, 0.9); /* Slight transparency */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
