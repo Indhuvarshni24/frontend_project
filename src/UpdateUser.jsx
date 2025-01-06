@@ -12,7 +12,7 @@ const UpdateUser = () => {
   // Fetch existing user data when component mounts
   useEffect(() => {
     axios
-      .put(`https://backend-project-6-4kwt.onrender.com`)
+      .put(`https://backend-project-8-vaza.onrender.com`)
       .then((res) => {
         setName(res.data.name);
         setEmail(res.data.email);
@@ -26,7 +26,7 @@ const UpdateUser = () => {
   const updateUser = (e) => {
     e.preventDefault();
     axios
-      .put(`https://backend-project-6-4kwt.onrender.com`, { name, email, address })
+      .put(`https://backend-project-8-vaza.onrender.com`, { name, email, address })
       .then((result) => {
         alert("User updated successfully");
         console.log(result.data);
